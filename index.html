@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Mr Ragebaiter 💙</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- WELCOME -->
+    <section class="screen active" id="welcome">
+        <div class="floating-heart">♡</div>
+        <p class="eyebrow">A LITTLE SOMETHING FOR YOU</p>
+
+        <h1>Happy Birthday,<br>
+            <span>Mr Ragebaiter!</span>
+        </h1>
+
+        <p class="subtitle">
+            A little corner of the internet, made especially for you.
+        </p>
+
+        <button onclick="showScreen('surprise')">
+            Open your surprise ♡
+        </button>
+
+        <p class="footer">Made with love, just for you.</p>
+    </section>
+
+
+    <!-- SURPRISE -->
+    <section class="screen" id="surprise">
+        <p class="eyebrow">LEVEL 1 UNLOCKED</p>
+        <div class="floating-heart">💙</div>
+
+        <h1>Well, well...<br>
+            <span>Look who's getting older!</span>
+        </h1>
+
+        <p class="subtitle">
+            Happy Birthday, Mr Ragebaiter!
+            You have officially unlocked your birthday surprise.
+        </p>
+
+        <div class="message-box">
+            WARNING! This website contains unlimited teasing,
+            embarrassing memories and a little too much affection.
+        </div>
+
+        <button onclick="showScreen('gallery')">
+            Enter our memories →
+        </button>
+    </section>
+
+
+    <!-- GALLERY -->
+    <section class="screen gallery" id="gallery">
+        <p class="eyebrow">A LITTLE TRIP DOWN MEMORY LANE</p>
+
+        <h1>Our little <span>universe.</span></h1>
+
+        <p class="subtitle">
+            Some moments deserve their own little place in time. 💙
+        </p>
+
+        <div class="photo-grid">
+
+            <div class="photo-card">
+                <img src="photos/photo1.jpeg" alt="Memory 1">
+                <p>One of my favourite memories ♡</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="photos/photo2.jpeg" alt="Memory 2">
+                <p>A moment worth keeping.</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="photos/photo3.jpeg" alt="Memory 3">
+                <p>And here's another one 💙</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="photos/photo4.jpeg" alt="Memory 4">
+                <p>Can't forget this one!</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="photos/photo5.jpeg" alt="Memory 5">
+                <p>My favourite kind of chaos.</p>
+            </div>
+
+            <div class="photo-card">
+                <img src="photos/photo6.jpeg" alt="Memory 6">
+                <p>More memories to come...</p>
+            </div>
+
+        </div>
+
+        <p class="gallery-footer">
+            Some moments become memories. Some people become home. ♡
+        </p>
+
+        <button onclick="showScreen('letter')">
+            One last thing for you 💌
+        </button>
+    </section>
+
+
+    <!-- LETTER -->
+    <section class="screen letter-screen" id="letter">
+        <p class="eyebrow">A LETTER JUST FOR YOU</p>
+
+        <div class="letter-card">
+
+            <p class="letter-date">To my thangameyy... ♡</p>
+
+            <h1>Happiest Birthdayyy <span>💙</span></h1>
+
+            <div class="letter-content">
+
+                <p>Happiesttt birthdayy thangameyy...
+                I just love youuu so muchhh!</p>
+
+                <p>Indha bday ku enala ivlo dha pana mudinchu,
+                enna manichidu...</p>
+
+                <p>Unakuu neraiya neraiya pananum nu aasai thangoo.
+                Enakuu kandippa naan elameyy panuvennn...</p>
+
+                <p>Unnoda oru oru bday vum nee marakatha maari
+                happieee ahh aakuvenn. Nee vena paru!</p>
+
+                <p>En chellow da neeee... mwahhh mwahhh!</p>
+
+                <p>Epomehh nee happyyy ahhh cutieee ah sirichitee
+                irukanum chellow.</p>
+
+                <p>Un face la andha azhagana siripu fade aagama
+                paathuka vendiyathu ennoda porupu...</p>
+
+                <p>I LOVE YOUUUU SOOOO SOOO SOOO MUCHHHHH!</p>
+
+                <p class="final-mwah">MWAHHHHHHHHHH! 💙</p>
+
+            </div>
+
+            <p class="letter-signature">
+                Forever your favourite person ♡
+            </p>
+
+        </div>
+
+        <button onclick="showScreen('cake')">
+            One more surprise... 🎂
+        </button>
+    </section>
+
+
+    <!-- CAKE + KITTY -->
+    <section class="screen cake-screen" id="cake">
+
+        <p class="eyebrow">YOUR SPECIAL MOMENT</p>
+
+        <h1>Make a <span>wish!</span></h1>
+
+        <p class="subtitle">
+            A little birthday cake for my favourite human. 💙
+        </p>
+
+        <!-- CAKE -->
+        <div class="cake-area">
+
+            <div class="candles">
+
+                <button class="candle" onclick="blowCandle(this)">
+                    <span class="flame">🔥</span>
+                    <span class="wick"></span>
+                </button>
+
+                <button class="candle" onclick="blowCandle(this)">
+                    <span class="flame">🔥</span>
+                    <span class="wick"></span>
+                </button>
+
+                <button class="candle" onclick="blowCandle(this)">
+                    <span class="flame">🔥</span>
+                    <span class="wick"></span>
+                </button>
+
+            </div>
+
+            <div class="cake-top"></div>
+
+            <div class="cake-body">
+                <span>HAPPY</span>
+                <span>BIRTHDAY!</span>
+            </div>
+
+            <div class="cake-plate"></div>
+
+        </div>
+
+        <p id="cakeMessage" class="cake-message">
+            Tap all three candles to make your wish! ✨
+        </p>
+
+
+        <!-- KITTY POPUP -->
+        <div class="kitty-container" id="kittyContainer">
+
+            <div class="kitty-speech" id="kittySpeech">
+                Pssst... Mr Ragebaiter! 🐾
+            </div>
+
+            <div class="kitty">
+                <div class="cat-ears">
+                    <div class="ear left-ear"></div>
+                    <div class="ear right-ear"></div>
+                </div>
+
+                <div class="cat-face">
+                    <div class="cat-eyes">
+                        <span>●</span>
+                        <span>●</span>
+                    </div>
+
+                    <div class="cat-nose">♥</div>
+
+                    <div class="cat-mouth">⌣</div>
+
+                    <div class="cat-blush left-blush"></div>
+                    <div class="cat-blush right-blush"></div>
+                </div>
+
+                <div class="cat-body">
+                    <span>♡</span>
+                </div>
+            </div>
+
+            <p class="kitty-caption">
+                Your birthday delivery has arrived! 🐱
+            </p>
+
+            <button id="kissButton" onclick="sendKiss()">
+                SEND A KISS 💋
+            </button>
+
+        </div>
+
+        <p class="kiss-instruction">
+            Tap the button and watch your birthday kiss fly! 💗
+        </p>
+
+        <button onclick="showScreen('welcome')">
+            Back to the beginning ↺
+        </button>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
